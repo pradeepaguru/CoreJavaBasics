@@ -16,6 +16,9 @@ public Mobiles(){
 
 	public Mobiles(String names, int ram, int price) {
 		// TODO Auto-generated constructor stub
+		this.names = names;
+		this.price= price;
+		this.ram = ram;
 	}
 
 
@@ -29,12 +32,14 @@ public Mobiles(){
 		Mobiles [] mob= {samsung,apple, oppo};
 		// TODO Auto-generated method stub
 		
-		Comparator comp = new Mobiles();
-		Arrays.sort(mob,comp);
-		
 		for(Mobiles i : mob ){
 			System.out.println("Before" + i.toString());
 		}
+		
+	
+		Comparator comp = new Mobiles();
+	
+
 	
 		Arrays.sort(mob,comp);
 		for(Mobiles i : mob ){
